@@ -110,6 +110,3 @@ class IndexController extends Controller
 3.这是我本地跑的一些数据
 
 ![基于Eloquent ORM事件的缓存实时更新设计](https://cdn.learnku.com/uploads/images/202306/13/82399/lDaox5eM8i.png!large)
-
-
-以上就是这次的ORM缓存实时更新设计、后期有新想法还可以拓展自己想要的东西！！！谢谢观看！！！
