@@ -1,0 +1,22 @@
+{
+    "name": "juenfy/laravel-orm-cache",
+    "description": "The CURD for Laravel ORM Cache",
+    "type": "l",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/database": ">=5.5",
+        "illuminate/support": ">=5.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Juenfy\\LaravelOrmCache\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juenfy",
+            "email": "824314051@qq.com"
+        }
+    ]
+}
