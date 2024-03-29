@@ -1,13 +1,13 @@
 <?php
 
-namespace Yellow\LaravelOrmCache;
+namespace Juenfy\LaravelOrmCache;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;
 use Nette\Utils\Reflection;
-use Yellow\LaravelOrmCache\Cache\Base;
-use Yellow\LaravelOrmCache\Cache\Query;
-use Yellow\LaravelOrmCache\Cache\Relation;
+use Juenfy\LaravelOrmCache\Cache\Base;
+use Juenfy\LaravelOrmCache\Cache\Query;
+use Juenfy\LaravelOrmCache\Cache\Relation;
 
 class OrmCacheModel extends Model
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yellow\LaravelOrmCache\Cache;
+namespace Juenfy\LaravelOrmCache\Cache;
 trait Base
 {
     /**
