@@ -107,7 +107,7 @@ class OrmCacheModel extends Model
     {
         if (static::$cacheFields) {
             foreach ($data as $k => $v) {
-                if (!in_array($data, static::$cacheFields)) {
+                if (!in_array($k, static::$cacheFields)) {
                     unset($data[$k]);
                 }
             }
@@ -122,6 +122,7 @@ class OrmCacheModel extends Model
     public function setPaging(bool $paging)
     {
         static::$paging = $paging;
+        return $this;
     }
 
     /**
@@ -132,6 +133,7 @@ class OrmCacheModel extends Model
     public function setPageSize(int $pageSize)
     {
         static::$pageSize = $pageSize;
+        return $this;
     }
 
     /**
@@ -142,6 +144,7 @@ class OrmCacheModel extends Model
     public function setPage(int $page)
     {
         static::$page = $page;
+        return $this;
     }
 
     /**
@@ -152,6 +155,7 @@ class OrmCacheModel extends Model
     public function setGetFields(array $fields)
     {
         static::$getFields = $fields;
+        return $this;
     }
 
     /**
@@ -162,6 +166,7 @@ class OrmCacheModel extends Model
     public function setSortField(string $field)
     {
         static::$sortField = $field;
+        return $this;
     }
 
     /**
@@ -172,6 +177,7 @@ class OrmCacheModel extends Model
     public function setSortType(string $type)
     {
         static::$sortType = $type;
+        return $this;
     }
 
     /**
@@ -189,5 +195,6 @@ class OrmCacheModel extends Model
     public function doNotCache()
     {
         static::$cacheSwitch = false;
+        return $this;
     }
 }
